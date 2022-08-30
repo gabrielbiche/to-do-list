@@ -13,7 +13,11 @@ export default function List({ tasks, selectTask }: Props) {
       <h2>Tasks of the day</h2>
       <ul>
         {tasks.map((item) => (
-          <Item selectTask={selectTask} key={item.id} {...item} />
+          <Item 
+            selectTask={selectTask} 
+            key={item.id} 
+            {...item} 
+          />
         ))}
       </ul>
     </aside>
